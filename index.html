@@ -8,11 +8,11 @@
         <script type="text/javascript">
             window.onload = function() {
                 // fallback link in case user doesn't have the app or opens link on desktop
-                var fallback = "https://www.youtube.com/factube",
+                var fallback = "https://www.youtube.com/factube?sub_confirmation=1",
                 // app to direct to youtube application, last part of link can be;
                 // video: watch?v=your_id
                 // channel: channel/your_id
-                app = "vnd.youtube://factube";
+                app = "vnd.youtube://factube?sub_confirmation=1";
 
                 if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
                     window.location = app;
